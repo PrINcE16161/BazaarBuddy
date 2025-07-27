@@ -1,0 +1,14 @@
+Marketplace:
+suppliers:
+id, name, category, location, rating, reviews, phone, whatsapp, verified, products[name, price, image, inStock], price
+
+ProductDetail:
+product:
+id, name, category, description, images[url, url], videos[title, thumbnail, url], suppliers[id, name, price, rating, contact, email, location, avatar, minOrder, deliveryTime], priceHistory, trend, changePercent, specifications
+
+SupplierProfile:
+supplier:
+id, name, owner, category, location, fullAddress, rating, reviews, phone, email, whatsapp, verified, established, emplyoees, description, avatar, coverImage, specialties[], bussinessHours, deliveryHours[], deliveryAreas[], paymentMethods[], minimumOrder, deliveryTime, totalProducts, activeOrders, completedOrders, responseTime, certifications
+
+ShoppingList:
+id, name, quantity, unit, category, priority, notes, status

@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 20% 98%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24 75% 55%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 120 40% 50%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 35 10% 95%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 45 93% 70%;
+    --accent-foreground: 20 14.3% 4.1%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 90%;
+    --input: 35 20% 90%;
+    --ring: 24 75% 55%;
+
+    /* Custom design tokens */
+    --primary-glow: 24 75% 65%;
+    --trust-green: 120 40% 50%;
+    --warm-golden: 45 93% 70%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--warm-golden)));
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    
+    /* Glass effects */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    
+    /* Shadows */
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1);
+    --shadow-warm: 0 10px 30px rgba(234, 88, 12, 0.15);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 35 20% 98%;
+
+    --card: 20 14.3% 8%;
+    --card-foreground: 35 20% 98%;
+
+    --popover: 20 14.3% 8%;
+    --popover-foreground: 35 20% 98%;
+
+    --primary: 24 75% 65%;
+    --primary-foreground: 20 14.3% 4.1%;
+
+    --secondary: 120 30% 45%;
+    --secondary-foreground: 35 20% 98%;
+
+    --muted: 20 14.3% 12%;
+    --muted-foreground: 25 5.3% 55%;
+
+    --accent: 45 85% 60%;
+    --accent-foreground: 20 14.3% 4.1%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 35 20% 98%;
+
+    --border: 20 14.3% 15%;
+    --input: 20 14.3% 15%;
+    --ring: 24 75% 65%;
+
+    /* Dark mode custom tokens */
+    --primary-glow: 24 75% 70%;
+    --trust-green: 120 30% 45%;
+    --warm-golden: 45 85% 60%;
+    
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--warm-golden)));
+    --gradient-glass: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    
+    /* Dark glass effects */
+    --glass-bg: rgba(0, 0, 0, 0.2);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    /* Dark shadows */
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-warm: 0 10px 30px rgba(234, 88, 12, 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
