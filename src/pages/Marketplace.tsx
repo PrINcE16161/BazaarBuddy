@@ -8,33 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Search, Filter, Star, MapPin, Phone, Plus, Eye, ShoppingCart, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import bakeryImage from "@/assets/products/bakery.jpg";
-import vegetablesImage from "@/assets/products/vegetables.jpg";
-import spicesImage from "@/assets/products/spices.jpg";
-import dairyImage from "@/assets/products/dairy.jpg";
-
-import onionImage from "@/assets/products/vegetables/onions/onion.jpg";
-import tomatoImage from "@/assets/products/vegetables/tomato/tomato.png";
-
-import potatoImage from "@/assets/products/vegetables/potato/Potato.jpg";
-import brinjalImage from "@/assets/products/vegetables/brinjial/brinjal.jpg";
-import garlicImage from "@/assets/products/vegetables/garlic/garlic.jpg";
-import ladyImage from "@/assets/products/vegetables/ladyfinger/ladyFinger.jpg";
-import gingerImage from "@/assets/products/vegetables/ginger/ginger.jpg";
-import pumpkinImage from "@/assets/products/vegetables/pumpkin/pumpkin.jpg";
-
-import garamImage from "@/assets/products/spices/garammasala/garamMasala.jpg";
-import cuminImage from "@/assets/products/spices/cuminseed/cuminSeeds.jpg";
-import mustardImage from "@/assets/products/spices/muatardseed/mustardSeeds.jpg";
-import cuminseedImage from "@/assets/products/spices/cuminseed/cuminSeeds.jpg";
-import blackImage from "@/assets/products/spices/blackpepper/blackPepper.jpg";
-import redImage from "@/assets/products/spices/redchilli/redChilli.jpg";
-import seameImage from "@/assets/products/spices/sesameseeds/sesameSeeds.jpg";
-import blackStoneImage from "@/assets/products/spices/blackstoneflower/blackStoneFlower.jpg";
-import breadImage from "@/assets/products/bakery/bread/bread.jpg";
-import cupImage from "@/assets/products/bakery/cupCake/cupCake.jpg";
-import bunImage from "@/assets/products/bakery/bun/bun.jpg";
-import toastImage from "@/assets/products/bakery/toast/toast.jpg";
 
 interface Product {
   name: string;
@@ -92,7 +65,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Onions", price: "₹25/kg", image: onionImage, inStock: true },
+        { name: "Onions", price: "₹25/kg", image: "/assets/products/vegetables/onions/onion.jpg", inStock: true },
       ],
       price: "₹25-50/kg"
     },
@@ -107,7 +80,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "tometo", price: "₹30/kg", image: tomatoImage, inStock: true },
+        { name: "tometo", price: "₹30/kg", image: "/assets/products/vegetables/tomato/tomato.png", inStock: true },
       ],
       price: "₹30-55/kg"
     },
@@ -122,7 +95,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Green Chilli", price: "₹40/kg", image: vegetablesImage, inStock: true },
+        { name: "Green Chilli", price: "₹40/kg", image: "/assets/products/vegetables/greenChilli/greenChilli.jpg", inStock: true },
       ],
       price: "₹40-50/kg"
     },
@@ -137,7 +110,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Beetroot", price: "₹29/kg", image: vegetablesImage, inStock: true },
+        { name: "Beetroot", price: "₹29/kg", image: "/assets/products/vegetables/beetroot/beetroot.jpg", inStock: true },
       ],
       price: "₹29-38/kg"
     },
@@ -152,7 +125,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Potato", price: "₹30/kg", image: potatoImage, inStock: true },
+        { name: "Potato", price: "₹30/kg", image: "/assets/products/vegetables/potato/Potato.jpg", inStock: true },
       ],
       price: "₹30-50/kg"
     },
@@ -167,7 +140,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Brinjial", price: "₹18/kg", image: brinjalImage, inStock: true },
+        { name: "Brinjial", price: "₹18/kg", image: "/assets/products/vegetables/brinjial/brinjal.jpg", inStock: true },
       ],
       price: "₹18-30/kg"
     },
@@ -182,7 +155,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Ginger", price: "₹44/kg", image: gingerImage, inStock: true },
+        { name: "Ginger", price: "₹44/kg", image: "/assets/products/vegetables/ginger/ginger.jpg", inStock: true },
       ],
       price: "₹44-80/kg"
     },
@@ -197,7 +170,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Garlic", price: "₹50/kg", image: garlicImage, inStock: true },
+        { name: "Garlic", price: "₹50/kg", image: "/assets/products/vegetables/garlic/garlic.jpg", inStock: true },
       ],
       price: "₹50-80/kg"
     },
@@ -212,7 +185,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Lady Finger", price: "40/kg", image: ladyImage, inStock: true },
+        { name: "Lady Finger", price: "40/kg", image: "/assets/products/vegetables/ladyfinger/ladyFinger.jpg", inStock: true },
       ],
       price: "₹40-60/kg"
     },
@@ -227,7 +200,7 @@ export default function Marketplace() {
       whatsapp: "+91 63556 25928",
       verified: true,
       products: [
-        { name: "Pumpkin", price: "₹60/kg", image: pumpkinImage, inStock: true },
+        { name: "Pumpkin", price: "₹60/kg", image: "/assets/products/vegetables/pumpkin/pumpkin.jpg", inStock: true },
       ],
       price: "₹60-100/kg"
     },
@@ -242,7 +215,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Garam Masala", price: "₹450/kg", image: garamImage, inStock: true },
+        { name: "Garam Masala", price: "₹450/kg", image: "/assets/products/spices/garammasala/garamMasala.jpg", inStock: true },
       ],
       price: "₹100-500/kg"
     },
@@ -257,7 +230,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Cumin Seed", price: "₹180/kg", image: cuminImage, inStock: true },
+        { name: "Cumin Seed", price: "₹180/kg", image: "/assets/products/spices/cuminseed/cuminSeeds.jpg", inStock: true },
       ],
       price: "₹180-300/kg"
     },
@@ -272,7 +245,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Muatard Seed", price: "₹70/kg", image: mustardImage, inStock: true },
+        { name: "Muatard Seed", price: "₹70/kg", image: "/assets/products/spices/muatardseed/mustardSeeds.jpg", inStock: true },
       ],
       price: "₹70-200kg"
     },
@@ -287,7 +260,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Cinnamon", price: "₹585/kg", image: cuminseedImage, inStock: true },
+        { name: "Cinnamon", price: "₹585/kg", image: "/assets/products/spices/cinnamon/cinnamon.jpg", inStock: true },
       ],
       price: "₹585-700/kg"
     },
@@ -302,7 +275,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Black Pepper", price: "₹662/kg", image: blackImage, inStock: true },
+        { name: "Black Pepper", price: "₹662/kg", image: "/assets/products/spices/blackpepper/blackPepper.jpg", inStock: true },
       ],
       price: "₹662-800/kg"
     },
@@ -317,7 +290,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Red Chilli", price: "115/kg", image: redImage, inStock: true },
+        { name: "Red Chilli", price: "115/kg", image: "/assets/products/spices/redchilli/redChilli.jpg", inStock: true },
       ],
       price: "₹115-175/kg"
     },
@@ -332,7 +305,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Sesame Seeds", price: "₹100/kg", image: seameImage, inStock: true },
+        { name: "Sesame Seeds", price: "₹100/kg", image: "/assets/products/spices/sesameseeds/sesameSeeds.jpg", inStock: true },
       ],
       price: "₹100-500/kg"
     },
@@ -347,7 +320,7 @@ export default function Marketplace() {
       whatsapp: "+91 87654 32109",
       verified: true,
       products: [
-        { name: "Black Stone Flower", price: "₹1900/kg", image: blackStoneImage, inStock: true },
+        { name: "Black Stone Flower", price: "₹1900/kg", image: "/assets/products/spices/blackstoneflower/blackStoneFlower.jpg", inStock: true },
       ],
       price: "₹1900-2500/kg"
     },
@@ -362,7 +335,7 @@ export default function Marketplace() {
       whatsapp: "+91 76543 21098",
       verified: true,
       products: [
-        { name: "Bread", price: "₹25/piece", image: breadImage, inStock: true },
+        { name: "Bread", price: "₹25/piece", image: "/assets/products/bakery/bread/bread.jpg", inStock: true },
       ],
       price: "₹20-40/piece"
     },
@@ -377,7 +350,7 @@ export default function Marketplace() {
       whatsapp: "+91 76543 21098",
       verified: true,
       products: [
-        { name: "Paneer", price: "₹148/piece", image: dairyImage, inStock: true },
+        { name: "Paneer", price: "₹148/piece", image: "/assets/products/dairyproducts/panner/paneer.jpg", inStock: true },
       ],
       price: "₹148-160/piece"
     },
@@ -392,7 +365,7 @@ export default function Marketplace() {
       whatsapp: "+91 76543 21098",
       verified: true,
       products: [
-        { name: "Fresh Milk", price: "₹60/piece", image: bakeryImage, inStock: true },
+        { name: "Fresh Milk", price: "₹60/piece", image: "/assets/products/dairyproducts/milk/milk.jpg", inStock: true },
       ],
       price: "₹60-70/piece"
     },
@@ -407,7 +380,7 @@ export default function Marketplace() {
       whatsapp: "+91 76543 21098",
       verified: true,
       products: [
-        { name: "Chees", price: "₹180/piece", image: bakeryImage, inStock: true },
+        { name: "Chees", price: "₹180/piece", image: "/assets/products/dairyproducts/cheese/cheese.jpg", inStock: true },
       ],
       price: "₹180-200/piece"
     },
@@ -422,7 +395,7 @@ export default function Marketplace() {
       whatsapp: "+91 76543 21098",
       verified: true,
       products: [
-        { name: "Butter", price: "₹138/piece", image: bakeryImage, inStock: true },
+        { name: "Butter", price: "₹138/piece", image: "/assets/products/dairyproducts/butter/butter.jpg", inStock: true },
       ],
       price: "₹138-140/piece"
     },
@@ -437,7 +410,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Cooking Oil", price: "₹150/L", image: dairyImage, inStock: true },
+        { name: "Cooking Oil", price: "₹150/L", image: "/assets/products/oil/cookingOil/cookingOil.jpg", inStock: true },
       ],
       price: "₹150-200/L"
     },
@@ -452,7 +425,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Mustard oil", price: "₹155/L", image: vegetablesImage, inStock: true },
+        { name: "Mustard oil", price: "₹155/L", image: "/assets/products/oil/mustardOil/mustardOil.jpg", inStock: true },
       ],
       price: "₹155-200/L"
     },
@@ -467,7 +440,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Ground nut oil", price: "₹184/L", image: dairyImage, inStock: true },
+        { name: "Ground nut oil", price: "₹184/L", image: "/assets/products/oil/groundnutOil/groundnutOil.jpg", inStock: true },
       ],
       price: "₹184-200/L"
     },
@@ -482,7 +455,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Sun flower oil", price: "₹150/L", image: dairyImage, inStock: true },
+        { name: "Sun flower oil", price: "₹150/L", image: "/assets/products/oil/sunflowerOil/sunflowerOil.png", inStock: true },
       ],
       price: "₹150-200/L"
     },
@@ -497,7 +470,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Soy bean oil", price: "₹124/L", image: dairyImage, inStock: true },
+        { name: "Soy bean oil", price: "₹124/L", image: "/assets/products/oil/soyabinOil/soyabeanOil.jpg", inStock: true },
       ],
       price: "₹124-200/L"
     },
@@ -512,7 +485,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Avocado oil", price: "₹1808/L", image: dairyImage, inStock: true },
+        { name: "Avocado oil", price: "₹1808/L", image: "/assets/products/oil/avacadoOil/avocadoOil.jpg", inStock: true },
       ],
       price: "₹1808-2000/L"
     },
@@ -527,7 +500,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Piam oil", price: "₹110/L", image: dairyImage, inStock: true },
+        { name: "Piam oil", price: "₹110/L", image: "/assets/products/oil/palmOil/plamOil.jpg", inStock: true },
       ],
       price: "₹110-150/L"
     },
@@ -542,7 +515,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Bread", price: "₹35/L", image: dairyImage, inStock: true },
+        { name: "Bread", price: "₹35/L", image: "/assets/products/bakery/bread/bread.jpg", inStock: true },
       ],
       price: "₹35-50/lg"
     },
@@ -557,7 +530,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Cupcake", price: "₹40", image:cupImage, inStock: true },
+        { name: "Cupcake", price: "₹40", image: "/assets/products/bakery/cupCake/cupCake.jpg", inStock: true },
       ],
       price: "₹40-80"
     },
@@ -572,7 +545,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Bun", price: "₹50/kg", image: bunImage, inStock: true },
+        { name: "Bun", price: "₹50/kg", image: "/assets/products/bakery/bun/bun.jpg", inStock: true },
       ],
       price: "₹50-60/kg"
     },
@@ -587,7 +560,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Tost", price: "₹45/kg", image: toastImage, inStock: true },
+        { name: "Tost", price: "₹45/kg", image: "/assets/products/bakery/toast/toast.jpg", inStock: true },
       ],
       price: "₹45-55/kg"
     },
@@ -602,7 +575,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Almond", price: "₹500/kg", image: dairyImage, inStock: true },
+        { name: "Almond", price: "₹500/kg", image: "/assets/products/dryfruits/almond/almond.jpeg", inStock: true },
       ],
       price: "₹500-750/kg"
     },
@@ -617,7 +590,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Pista", price: "₹800/kg", image: dairyImage, inStock: true },
+        { name: "Pista", price: "₹800/kg", image: "/assets/products/dryfruits/pista/pista.jpg", inStock: true },
       ],
       price: "₹800-1000/kg"
     },
@@ -632,7 +605,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Coconut", price: "₹250/kg", image: dairyImage, inStock: true },
+        { name: "Coconut", price: "₹250/kg", image: "/assets/products/dryfruits/coconut/coconut.png", inStock: true },
       ],
       price: "₹250-350/kg"
     },
@@ -647,7 +620,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Fig", price: "₹800/kg", image: dairyImage, inStock: true },
+        { name: "Fig", price: "₹800/kg", image: "/assets/products/dryfruits/fig/fig.jpg", inStock: true },
       ],
       price: "₹800-1000/kg"
     },
@@ -662,7 +635,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Dates", price: "₹150/kg", image: dairyImage, inStock: true },
+        { name: "Dates", price: "₹150/kg", image: "/assets/products/dryfruits/dates/dates.jpg", inStock: true },
       ],
       price: "₹150-200/kg"
     },
@@ -677,7 +650,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Dry Dates", price: "₹200/kg", image: dairyImage, inStock: true },
+        { name: "Dry Dates", price: "₹200/kg", image: "/assets/products/dryfruits/drydat/drydat.jpg", inStock: true },
       ],
       price: "₹200-250/kg"
     },
@@ -692,7 +665,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Raisin", price: "₹500/kg", image: dairyImage, inStock: true },
+        { name: "Raisin", price: "₹500/kg", image: "/assets/products/dryfruits/raisins/raisins.png", inStock: true },
       ],
       price: "₹500-750/kg"
     },
@@ -707,7 +680,7 @@ export default function Marketplace() {
       whatsapp: "+91 65432 10987",
       verified: true,
       products: [
-        { name: "Walnut", price: "₹600/kg", image: dairyImage, inStock: true },
+        { name: "Walnut", price: "₹600/kg", image: "/assets/products/dryfruits/walnut/walnut.jpg", inStock: true },
       ],
       price: "₹600-750/kg"
     },

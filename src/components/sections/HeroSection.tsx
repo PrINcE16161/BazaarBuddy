@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, CheckCircle, Users, ShoppingBag, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroBanner from "@/assets/hero-banner.jpg";
 
 export function HeroSection() {
   return (
@@ -10,7 +9,7 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBanner})` }}
+        style={{ backgroundImage: 'url("/assets/hero-banner.jpg")' }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/50" />
       </div>

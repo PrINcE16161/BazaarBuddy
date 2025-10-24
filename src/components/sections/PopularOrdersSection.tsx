@@ -3,10 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { TrendingUp, Clock, ShoppingBag } from "lucide-react";
-import bakeryImage from "@/assets/products/bakery.jpg";
-import vegetablesImage from "@/assets/products/vegetables.jpg";
-import spicesImage from "@/assets/products/spices.jpg";
-import dairyImage from "@/assets/products/dairy.jpg";
 
 export function PopularOrdersSection() {
   const popularOrders = [
@@ -14,7 +10,7 @@ export function PopularOrdersSection() {
       id: 1,
       name: "Onions",
       category: "Vegetables & Fruits",
-      image: vegetablesImage,
+      image: "/assets/products/vegetables.jpg",
       orders: 2840,
       growth: "+12%",
       items: ["Onions", "Tomatoes", "Potatoes", "Green Vegetables"],
@@ -24,7 +20,7 @@ export function PopularOrdersSection() {
       id: 11,
       name: "SupplyHarvest",
       category: "Spices & Masala",
-      image: spicesImage,
+      image: "/assets/products/spices.jpg",
       orders: 1920,
       growth: "+8%",
       items: ["Garam Masala", "Cumin Seed", "Mutard Seed", "Cinnamon"],
@@ -34,7 +30,7 @@ export function PopularOrdersSection() {
       id: 19,
       name: "MilkNest",
       category: "Dairy Products",
-      image: bakeryImage,
+      image: '/assets/products/dairy.jpg',
       orders: 1650,
       growth: "+15%",
       items: ["Bread", "Pav", "Buns"],
@@ -44,7 +40,7 @@ export function PopularOrdersSection() {
       id: 24,
       name: "PureDrop Oils",
       category: "Oil & Ghee",
-      image: dairyImage,
+      image: "/assets/products/oil/cookingOil/cookingOil.jpg",
       orders: 1340,
       growth: "+5%",
       items: ["Cooking Oil", "Ghee", "Milk"],

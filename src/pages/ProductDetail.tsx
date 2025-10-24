@@ -18,90 +18,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import bakeryImage from "@/assets/products/bakery.jpg";
-import vegetablesImage from "@/assets/products/vegetables.jpg";
-import spicesImage from "@/assets/products/spices.jpg";
-import dairyImage from "@/assets/products/dairy.jpg";
-
-import onionImage from "@/assets/products/vegetables/onions/onion.jpg";
-import onionImage1 from "@/assets/products/vegetables/onions/onion1.jpg";
-import onionImage2 from "@/assets/products/vegetables/onions/onion2.png";
-
-import tomatoImage from "@/assets/products/vegetables/tomato/tomato.png";
-import tomatoImage1 from "@/assets/products/vegetables/tomato/tomatoe1.jpg";
-import tomatoImage2 from "@/assets/products/vegetables/tomato/tomato2.jpg";
-
-import potatoImage from "@/assets/products/vegetables/potato/Potato.jpg";
-import potatoImage1 from "@/assets/products/vegetables/potato/potato1.png";
-import potatoImage2 from "@/assets/products/vegetables/potato/potato2.jpg";
-
-import brinjalImage from "@/assets/products/vegetables/brinjial/brinjal.jpg";
-import brinjalImage1 from "@/assets/products/vegetables/brinjial/brinjal1.png";
-import brinjalImage2 from "@/assets/products/vegetables/brinjial/brinjal.jpg";
-
-import garlicImage from "@/assets/products/vegetables/garlic/garlic.jpg";
-import garlicImage1 from "@/assets/products/vegetables/garlic/garlic2.jpg";
-import garlicImage2 from "@/assets/products/vegetables/garlic/garlic.jpg";
-
-import ladyImage from "@/assets/products/vegetables/ladyfinger/ladyFinger.jpg";
-import ladyImage1 from "@/assets/products/vegetables/ladyfinger/ladyFinger1.jpg";
-import ladyImage2 from "@/assets/products/vegetables/ladyfinger/ladyFinger2.jpg";
-
-import gingerImage from "@/assets/products/vegetables/ginger/ginger.jpg";
-import gingerImage1 from "@/assets/products/vegetables/ginger/ginger1.jpg";
-import gingerImage2 from "@/assets/products/vegetables/ginger/ginger2.jpg";
-
-import pumpkinImage from "@/assets/products/vegetables/pumpkin/pumpkin.jpg";
-import pumpkinImage1 from "@/assets/products/vegetables/pumpkin/pumpkin1.jpg";
-import pumpkinImage2 from "@/assets/products/vegetables/pumpkin/pumpkin2.jpg";
-
-import garamImage from "@/assets/products/spices/garammasala/garamMasala.jpg";
-import garamImage1 from "@/assets/products/spices/garammasala/garamMasala1.jpg";
-import garamImage2 from "@/assets/products/spices/garammasala/garamMasala2.jpg";
-
-import cuminImage from "@/assets/products/spices/cuminseed/cuminSeeds.jpg";
-import cuminImage1 from "@/assets/products/spices/cuminseed/cuminSeeds1.jpg";
-import cuminImage2 from "@/assets/products/spices/cuminseed/cuminSeeds2.jpg";
-
-import mustardImage from "@/assets/products/spices/muatardseed/mustardSeeds.jpg";
-import mustardImage1 from "@/assets/products/spices/muatardseed/mustardSeeds1.jpg";
-import mustardImage2 from "@/assets/products/spices/muatardseed/mustardSeeds2.jpg";
-
-import cuminseedImage from "@/assets/products/spices/cuminseed/cuminSeeds.jpg";
-import cuminseedImage1 from "@/assets/products/spices/cuminseed/cuminSeeds1.jpg";
-import cuminseedImage2 from "@/assets/products/spices/cuminseed/cuminSeeds2.jpg";
-
-import blackImage from "@/assets/products/spices/blackpepper/blackPepper.jpg";
-import blackImage1 from "@/assets/products/spices/blackpepper/blackPepper1.jpg";
-import blackImage2 from "@/assets/products/spices/blackpepper/blackPepper2.png";
-
-import redImage from "@/assets/products/spices/redchilli/redChilli.jpg";
-import redImage1 from "@/assets/products/spices/redchilli/redChilli1.jpg";
-import redImage2 from "@/assets/products/spices/redchilli/redChilli2.jpg";
-
-import seameImage from "@/assets/products/spices/sesameseeds/sesameSeeds.jpg";
-import seameImage1 from "@/assets/products/spices/sesameseeds/sesameSeeds1.jpg";
-import seameImage2 from "@/assets/products/spices/sesameseeds/sesameSeeds2.jpg";
-
-import blackStoneImage from "@/assets/products/spices/blackstoneflower/blackStoneFlower.jpg";
-import blackStoneImage1 from "@/assets/products/spices/blackstoneflower/blackStoneFlower1.jpg";
-import blackStoneImage2 from "@/assets/products/spices/blackstoneflower/blackStoneFlower2.jpg";
-
-import breadImage from "@/assets/products/bakery/bread/bread.jpg";
-import breadImage1 from "@/assets/products/bakery/bread/bread1.jpg";
-import breadImage2 from "@/assets/products/bakery/bread/bread2.jpg";
-
-import cupImage from "@/assets/products/bakery/cupCake/cupCake.jpg";
-import cupImage1 from "@/assets/products/bakery/cupCake/cupCake1.jpg";
-import cupImage2 from "@/assets/products/bakery/cupCake/cupCake2.jpg";
-
-import bunImage from "@/assets/products/bakery/bun/bun.jpg";
-import bunImage1 from "@/assets/products/bakery/bun/bun1.jpg";
-import bunImage2 from "@/assets/products/bakery/bun/bun2.jpg";
-
-import toastImage from "@/assets/products/bakery/toast/toast.jpg";
-import toastImage1 from "@/assets/products/bakery/toast/toast1.jpg";
-import toastImage2 from "@/assets/products/bakery/toast/toast2.jpg";
 
 import { useToast } from "@/hooks/use-toast";
 
@@ -155,9 +71,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        onionImage,
-        onionImage1,
-        onionImage2,
+        "/assets/products/vegetables/onions/onion.jpg",
+        "/assets/products/vegetables/onions/onion1.jpg",
+        "/assets/products/vegetables/onions/onion2.png",
       ],
       supplier: [
         {
@@ -208,9 +124,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        tomatoImage,
-        tomatoImage1,
-        tomatoImage2,
+        "/assets/products/vegetables/tomato/tomato.png",
+        "/assets/products/vegetables/tomato/tomatoe1.jpg",
+        "/assets/products/vegetables/tomato/tomato2.jpg",
       ],
       supplier: [
         {
@@ -261,9 +177,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/vegetables/greenChilli/greenChilli.jpg",
+        "/assets/products/vegetables/greenChilli/greenChilli1.jpg",
+        "/assets/products/vegetables/greenChilli/greenChilli2.jpg",
       ],
       supplier: [
         {
@@ -314,9 +230,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/vegetables/beetroot/beetroot.jpg",
+        "/assets/products/vegetables/beetroot/beetroot1.jpg",
+        "/assets/products/vegetables/beetroot/beetroot2.jpg",
       ],
       supplier: [
         {
@@ -367,9 +283,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        potatoImage,
-        potatoImage1,
-        potatoImage2,
+        "/assets/products/vegetables/potato/Potato.jpg",
+        "/assets/products/vegetables/potato/potato1.png",
+        "/assets/products/vegetables/potato/potato2.jpg",
       ],
       supplier: [
         {
@@ -420,9 +336,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        brinjalImage,
-        brinjalImage1,
-        brinjalImage2,
+        "/assets/products/vegetables/brinjial/brinjal.jpg",
+        "/assets/products/vegetables/brinjial/brinjal1.png",
+        "/assets/products/vegetables/brinjial/brinjal.jpg",
       ],
       supplier: [
         {
@@ -473,9 +389,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        gingerImage,
-        gingerImage1,
-        gingerImage2,
+        "/assets/products/vegetables/ginger/ginger.jpg",
+        "/assets/products/vegetables/ginger/ginger1.jpg",
+        "/assets/products/vegetables/ginger/ginger2.jpg",
       ],
       supplier: [
         {
@@ -526,9 +442,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        garlicImage,
-        garlicImage1,
-        garlicImage2,
+        "/assets/products/vegetables/garlic/garlic.jpg",
+        "/assets/products/vegetables/garlic/garlic2.jpg",
+        "/assets/products/vegetables/garlic/garlic.jpg",
       ],
       supplier: [
         {
@@ -579,9 +495,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        ladyImage,
-        ladyImage1,
-        ladyImage2,
+        "/assets/products/vegetables/ladyfinger/ladyFinger.jpg",
+        "/assets/products/vegetables/ladyfinger/ladyFinger1.jpg",
+        "/assets/products/vegetables/ladyfinger/ladyFinger2.jpg",
       ],
       supplier: [
         {
@@ -632,9 +548,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        pumpkinImage,
-        pumpkinImage1,
-        pumpkinImage2,
+        "/assets/products/vegetables/pumpkin/pumpkin.jpg",
+        "/assets/products/vegetables/pumpkin/pumpkin1.jpg",
+        "/assets/products/vegetables/pumpkin/pumpkin2.jpg",
       ],
       supplier: [
         {
@@ -685,9 +601,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        garamImage,
-        garamImage1,
-        garamImage2,
+        "/assets/products/spices/garammasala/garamMasala.jpg",
+        "/assets/products/spices/garammasala/garamMasala1.jpg",
+        "/assets/products/spices/garammasala/garamMasala2.jpg",
       ],
       supplier: [
         {
@@ -738,9 +654,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        cuminImage,
-        cuminImage1,
-        cuminImage2,
+        "/assets/products/spices/cuminseed/cuminSeeds.jpg",
+        "/assets/products/spices/cuminseed/cuminSeeds1.jpg",
+        "/assets/products/spices/cuminseed/cuminSeeds2.jpg",
       ],
       supplier: [
         {
@@ -791,9 +707,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/spices/muatardseed/mustardSeeds.jpg",
+        "/assets/products/spices/muatardseed/mustardSeeds1.jpg",
+        "/assets/products/spices/muatardseed/mustardSeeds2.jpg",
       ],
       supplier: [
         {
@@ -844,9 +760,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        cuminseedImage,
-        cuminseedImage1,
-        cuminseedImage2,
+        "/assets/products/spices/cuminseed/cuminSeeds.jpg",
+        "/assets/products/spices/cuminseed/cuminSeeds1.jpg",
+        "/assets/products/spices/cuminseed/cuminSeeds2.jpg",
       ],
       supplier: [
         {
@@ -897,9 +813,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        blackImage,
-        blackImage1,
-        blackImage2,
+        "/assets/products/spices/blackpepper/blackPepper.jpg",
+        "/assets/products/spices/blackpepper/blackPepper1.jpg",
+        "/assets/products/spices/blackpepper/blackPepper2.png",
       ],
       supplier: [
         {
@@ -950,9 +866,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        redImage,
-        redImage1,
-        redImage2,
+        "/assets/products/spices/redchilli/redChilli.jpg",
+        "/assets/products/spices/redchilli/redChilli1.jpg",
+        "/assets/products/spices/redchilli/redChilli2.jpg",
       ],
       supplier: [
         {
@@ -1003,9 +919,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        seameImage,
-        seameImage1,
-        seameImage2,
+        "/assets/products/spices/sesameseeds/sesameSeeds.jpg",
+        "/assets/products/spices/sesameseeds/sesameSeeds1.jpg",
+        "/assets/products/spices/sesameseeds/sesameSeeds2.jpg",
       ],
       supplier: [
         {
@@ -1056,9 +972,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        blackStoneImage,
-        blackStoneImage1,
-        blackStoneImage2,
+        "/assets/products/spices/blackstoneflower/blackStoneFlower.jpg",
+        "/assets/products/spices/blackstoneflower/blackStoneFlower1.jpg",
+        "/assets/products/spices/blackstoneflower/blackStoneFlower2.jpg",
       ],
       supplier: [
         {
@@ -1109,9 +1025,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        breadImage,
-        breadImage1,
-        breadImage2,
+        "/assets/products/dairyproducts/bread/bread.jpg",
+        "/assets/products/dairyproducts/bread/bread1.jpg",
+        "/assets/products/dairyproducts/bread/bread2.jpg",
       ],
       supplier: [
         {
@@ -1162,9 +1078,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dairyproducts/panner/paneer.jpg",
+        "/assets/products/dairyproducts/panner/paneer1.jpg",
+        "/assets/products/dairyproducts/panner/paneer2.jpg",
       ],
       supplier: [
         {
@@ -1215,9 +1131,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dairyproducts/milk/milk.jpg",
+        "/assets/products/dairyproducts/milk/milk1.jpg",
+        "/assets/products/dairyproducts/milk/milk2.jpg",
       ],
       supplier: [
         {
@@ -1268,9 +1184,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dairyproducts/cheese/cheese.jpg",
+        "/assets/products/dairyproducts/cheese/cheese1.jpg",
+        "/assets/products/dairyproducts/cheese/cheese2.jpg",
       ],
       supplier: [
         {
@@ -1321,9 +1237,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dairyproducts/butter/butter.jpg",
+        "/assets/products/dairyproducts/butter/butter1.jpg",
+        "/assets/products/dairyproducts/butter/butter2.jpg",
       ],
       supplier: [
         {
@@ -1374,9 +1290,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/oil/cookingOil/cookingOil.jpg",
+        "/assets/products/oil/cookingOil/cookingOil1.jpg",
+        "/assets/products/oil/cookingOil/cookingOil2.jpg",
       ],
       supplier: [
         {
@@ -1427,9 +1343,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        mustardImage,
-        mustardImage1,
-        mustardImage2,
+        "/assets/products/oil/mustardoil/mustardOil.jpg",
+        "/assets/products/oil/mustardoil/mustardOil1.jpg",
+        "/assets/products/oil/mustardoil/mustardOil2.jpg",
       ],
       supplier: [
         {
@@ -1480,9 +1396,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/oil/groundnutoil/groundNutOil.jpg",
+        "/assets/products/oil/groundnutoil/groundNutOil1.jpg",
+        "/assets/products/oil/groundnutoil/groundNutOil2.jpg",
       ],
       supplier: [
         {
@@ -1533,9 +1449,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/oil/sunflowerOil/sunflowerOil.png",
+        "/assets/products/oil/sunfloweroil/sunflowerOil1.jpg",
+        "/assets/products/oil/sunfloweroil/sunflowerOil2.jpg",
       ],
       supplier: [
         {
@@ -1586,9 +1502,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/oil/soyabinOil/soyabeanOil.jpg",
+        "/assets/products/oil/soyabinOil/soyabeanOil1.jpg",
+        "/assets/products/oil/soyabinOil/soyabeanOil2.jpg",
       ],
       supplier: [
         {
@@ -1639,9 +1555,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/oil/avacadoOil/avocadoOil.jpg",
+        "/assets/products/oil/avacadoOil/avocadoOil1.jpg",
+        "/assets/products/oil/avacadoOil/avocadoOil2.jpg",
       ],
       supplier: [
         {
@@ -1692,9 +1608,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/oil/palmOil/plamOil.jpg",
+        "/assets/products/oil/palmOil/plamOil1.jpg",
+        "/assets/products/oil/palmOil/plamOil2.jpg",
       ],
       supplier: [
         {
@@ -1745,9 +1661,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/bakery/bread/bread.jpg",
+        "/assets/products/bakery/bread/bread1.jpg",
+        "/assets/products/bakery/bread/bread2.jpg",
       ],
       supplier: [
         {
@@ -1798,9 +1714,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        cupImage,
-        cupImage1,
-        cupImage2,
+        "/assets/products/bakery/cupcake/cupcake.jpg",
+        "/assets/products/bakery/cupcake/cupcake1.jpg",
+        "/assets/products/bakery/cupcake/cupcake2.jpg",
       ],
       supplier: [
         {
@@ -1851,9 +1767,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        bunImage,
-        bunImage1,
-        bunImage2,
+        "/assets/products/bakery/bun/bun.jpg",
+        "/assets/products/bakery/bun/bun1.jpg",
+        "/assets/products/bakery/bun/bun2.jpg",
       ],
       supplier: [
         {
@@ -1904,9 +1820,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        toastImage,
-        toastImage1,
-        toastImage2,
+        "/assets/products/bakery/toast/toast.jpg",
+        "/assets/products/bakery/toast/toast1.jpg",
+        "/assets/products/bakery/toast/toast2.jpg",
       ],
       supplier: [
         {
@@ -1957,9 +1873,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/walnut/walnut.jpg",
+        "/assets/products/dryfruits/walnut/walnut1.jpg",
+        "/assets/products/dryfruits/walnut/walnut2.jpg",
       ],
       supplier: [
         {
@@ -2010,9 +1926,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/pista/pista.jpg",
+        "/assets/products/dryfruits/pista/pista1.jpg",
+        "/assets/products/dryfruits/pista/pista2.jpg",
       ],
       supplier: [
         {
@@ -2063,9 +1979,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/coconut/coconut1.jpg",
+        "/assets/products/dryfruits/coconut/coconut.png",
+        "/assets/products/dryfruits/coconut/coconut2.jpg",
       ],
       supplier: [
         {
@@ -2116,9 +2032,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/fig/fig.jpg",
+        "/assets/products/dryfruits/fig/fig1.jpg",
+        "/assets/products/dryfruits/fig/fig2.jpg",
       ],
       supplier: [
         {
@@ -2169,9 +2085,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/dates/dates.jpg",
+        "/assets/products/dryfruits/dates/dates1.jpg",
+        "/assets/products/dryfruits/dates/dates2.jpg",
       ],
       supplier: [
         {
@@ -2222,9 +2138,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/drydat/drydat.jpg",
+        "/assets/products/dryfruits/drydat/drydat1.jpg",
+        "/assets/products/dryfruits/drydat/drydat2.png",
       ],
       supplier: [
         {
@@ -2275,9 +2191,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/raisins/raisins.png",
+        "/assets/products/dryfruits/raisins/raisins1.jpg",
+        "/assets/products/dryfruits/raisins/raisins2.jpg",
       ],
       supplier: [
         {
@@ -2328,9 +2244,9 @@ const ProductDetail = () => {
       description: "",
       whatsapp: "+91 98765 43210",
       images: [
-        vegetablesImage,
-        vegetablesImage,
-        "/api/placeholder/600/400",
+        "/assets/products/dryfruits/walnut/walnut.jpg",
+        "/assets/products/dryfruits/walnut/walnut1.jpg",
+        "/assets/products/dryfruits/walnut/walnut2.jpg",
       ],
       supplier: [
         {
@@ -2513,12 +2429,16 @@ const ProductDetail = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 gap-4 text-sm">
-                    {Object.entries(product.specifications).map(([key, value]) => (
-                      <div key={key} className="flex justify-between">
-                        <span className="text-muted-foreground">{key}:</span>
-                        <span className="font-medium">{value}</span>
-                      </div>
-                    ))}
+                    {product?.specifications && typeof product.specifications === "object" ? (
+                      Object.entries(product.specifications).map(([key, value]) => (
+                        <div key={key} className="flex justify-between">
+                          <span className="text-muted-foreground">{key}:</span>
+                          <span className="font-medium">{String(value)}</span>
+                        </div>
+                      ))
+                    ) : (
+                      <p>No specifications available</p>
+                    )}
                   </div>
                 </CardContent>
               </Card>
